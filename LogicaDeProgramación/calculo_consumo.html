@@ -1,0 +1,45 @@
+<html lang="pt-ES" data-product="primer_ejercicio_one">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gasolina o Alcohol</title>
+    </head>
+    <body>
+        <h3>¿Alcohol o gasolina?</h3>
+        <br>
+        <h4>Problema:</h4>
+        <p>Si un carro tiene un <strong>tanque</strong> de 40 litros. Usando gasolina y consumiendo todo el tanque se hace un camino de 480 kilómetros. <br><strong>¿Cuál es el consumo de gasolina por kilómetro recorrido?.</strong>
+        <br>
+        <br>
+        Por otro lado, con el alcohol: el mismo tanque de 40 litros hace un recorrido de 300 kilómetros. <br><strong>¿Cuál es el consumo de alcohol por kilómetro recorrido?</strong>
+        </p>
+
+        <script>
+            var tanque = 40;
+            var distancia1 = 480;
+            var distamcia2 = 300;
+            var caminogasolina = tanque/distancia1;
+            var caminoalcohol = tanque/distamcia2;
+            var kmxgas = distancia1/tanque;
+            var kmxalc = distamcia2/tanque;
+            var rounded = Math.round((caminogasolina + Number.EPSILON) * 100) / 100;
+            var rounded1 = Math.round((caminoalcohol + Number.EPSILON) * 100) / 100;
+            var rounded2 = Math.round((kmxalc + Number.EPSILON) * 100) / 100;
+            var rounded3 = Math.round((kmxgas + Number.EPSILON) * 100) / 100;
+            document.write("<strong>El consumo de gasolina por km recorrido es: </strong>");
+            document.write("<br>");
+            document.write(rounded + " litros de gasolina x kilometro. ");
+            document.write("<br>");
+            document.write(rounded3 + " kilometros x litros de gasolina. ");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<strong> El consumo de alcohol por km recorrido es: </strong>");
+            document.write("<br>");
+            document.write(rounded1 + " litros de alcohol x kilometro. ");
+            document.write("<br>");
+            document.write(rounded2 + " kilometros x litros de alcohol. ");
+
+        </script>
+    </body>
+
+
+

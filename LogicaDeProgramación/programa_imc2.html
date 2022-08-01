@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Programa Calcular IMC</title>
+    </head>
+    <boby>
+        <h1>Programa Calcular IMC</h1>
+        <button type="button" onclick="ShowPrompt()">Ingresa tus datos</button>
+        <script>
+
+
+            function saltarlinea() {
+
+                document.write("<br><br><br><hr><br><br>");
+            };
+
+            function imprimir(frase) {
+
+                document.write("<big>" + (frase) + "</big>");
+                saltarlinea();
+            };
+
+            var datos = []; //array de valores
+                let nombre, peso, altura;
+
+            function ShowPrompt() {
+                    for (var i = 0; i < 3; i++) {
+                        var nombre = prompt("Hola ingresa tu Nombre y Apellido" + (parseInt(i)));
+                        var peso = prompt("Ingresa tu peso en kg (ejemplo: '60')" + (parseInt(i) + 1));
+                        var altura = prompt("Ingresa tu altura en mtr (ejemplo: '1.50')" + (parseInt(i) + 2));
+                            let imc = peso/(altura*altura);
+                    eval(" nombre" + i + " =" + nombre); // aqui asignas el valor a tu varaible de forma dinamica
+                    list[i] = nombre; // aqui guardas el valor en el array definido
+                    imprimir(nombre);
+                    //eval(" altura" + i + " =" + altura); // aqui asignas el valor a tu varaible de forma dinamica
+                    //list[i] = altura; // aqui guardas el valor en el array definido
+                    //imprimir(altura);
+                    //eval(" peso" + i + " =" + peso); // aqui asignas el valor a tu varaible de forma dinamica
+                    //list[i] = peso; // aqui guardas el valor en el array definido
+                    //imprimir(peso);
+                        }
+                    }
+
+
+
+
+            //imprimir('Tu nombre es:  ' + (nombre));
+            //imprimir('Tu peso es:  ' + (peso));
+            //imprimir('Tu altura es:  ' + (altura));
+            //imprimir("Genial " + (nombre) + ' Tu IMC es: ' + (imc));
+
+        </script>
+    <body>
+</html>
